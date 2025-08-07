@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Interaction</title>
+  <style>
+    #message {
+      font-size: 24px;
+      margin-top: 20px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Interaction</h1>
+  <button id="changeBtn">Click Me!</button>
+  <div id="message">Hello there!</div>
+
+  <script>
+    const btn = document.getElementById("changeBtn");
+    const msg = document.getElementById("message");
+
+    btn.addEventListener("click", function () {
+      msg.innerText = "You clicked the button!";
+      msg.style.color = "red";
+    });
+  </script>
+</body>
+</html>
